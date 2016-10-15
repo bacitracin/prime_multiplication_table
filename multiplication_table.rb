@@ -1,4 +1,6 @@
 def print_table()
+  prime_numbers = pull_primes(10) #array
+  
 end
 
 def pull_primes(num)
