@@ -1,6 +1,9 @@
 def print_table()
-  prime_numbers = pull_primes(10) #array
-  
+  rows = pull_primes(10) #array
+  columns = rows
+
+  rows.each {|num| print "%-3d " % num}
+
 end
 
 def pull_primes(num)
