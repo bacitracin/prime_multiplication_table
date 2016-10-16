@@ -39,5 +39,15 @@ describe MultiplicationTable do
     end
 
   end
+
+  describe "#print_table" do
+
+    context 'testing with num = 1' do
+      it 'returns a 1 x 1 table' do
+        #expect(@multiplication_table.print_table(1) == [2])
+      end
+    end
+
+  end
   
 end
