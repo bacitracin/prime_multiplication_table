@@ -1,5 +1,5 @@
 require 'rspec'
-require_relative 'multiplication_table'
+require_relative 'lib/multiplication_table'
 
 describe MultiplicationTable do
 
