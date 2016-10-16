@@ -1,13 +1,15 @@
-def print_table()
-  rows = pull_primes(10) #array
+def print_table(num)
+  rows = pull_primes(num) #array
   columns = rows
 
-  rows.each {|row_num| print "%-3d " % row_num}
-  print "\n"
+  print "     "
+  rows.each {|row_num| print " %-3d " % row_num}
+  print "\n\n"
 
   columns.each do |column_num|
-    rows.each {|row_num| print "%-3d " % (row_num * column_num)}
-    print "\n"
+    print "%-3d| " % column_num
+    rows.each {|row_num| print " %-3d " % (row_num * column_num)}
+    print "\n\n"
   end
 
 end
@@ -29,7 +31,7 @@ end
 
 def is_prime?(num)
   divisors_array = []
-  
+
   (1..num).each do |n|
     if num % n == 0
       divisors_array << num
