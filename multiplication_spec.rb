@@ -7,7 +7,7 @@ describe MultiplicationTable do
     @multiplication_table = MultiplicationTable.new
   end
 
-  describe ".is_prime?" do
+  describe "#is_prime?" do
 
     context 'testing the number 5' do
       it "returns true" do
@@ -18,6 +18,23 @@ describe MultiplicationTable do
     context 'testing the number 10' do
       it "returns true" do
         expect(@multiplication_table.is_prime?(10)).to eql(false)
+      end
+    end
+
+  end
+
+
+  describe "#pull_primes" do
+
+    context 'testing with num = 10' do
+      it 'returns 10' do
+        expect(@multiplication_table.pull_primes(10).size == 10)
+      end
+    end
+
+    context 'testing with num = 2' do
+      it 'returns 10' do
+        expect(@multiplication_table.pull_primes(2).size == 2)
       end
     end
 
