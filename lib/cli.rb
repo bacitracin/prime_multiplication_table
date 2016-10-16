@@ -10,10 +10,11 @@ class CLI
       table_size = gets.strip.to_i    
       @multiplication_table.print_table(table_size)
       puts "Run again? Y or N?"
+      choice = gets.strip.upcase
     end
 
     puts "Now exiting. Thanks!"
   end
 
 
-ends
+end
