@@ -1,4 +1,5 @@
 class MultiplicationTable
+  
   def print_table(num)
     rows = pull_primes(num) #array
     columns = rows
