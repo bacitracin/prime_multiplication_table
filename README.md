@@ -1,4 +1,5 @@
 ### Prime Multiplication Table ReadMe
+[Blog Post Here](http://www.tracyctran.com/code/2016/10/16/printing-a-multiplication-table-of-the-first-10-prime-numbers/)
 
 #### Introduction
 
