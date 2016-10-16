@@ -2,7 +2,13 @@ def print_table()
   rows = pull_primes(10) #array
   columns = rows
 
-  rows.each {|num| print "%-3d " % num}
+  rows.each {|row_num| print "%-3d " % row_num}
+  print "\n"
+
+  columns.each do |column_num|
+    rows.each {|row_num| print "%-3d " % (row_num * column_num)}
+    print "\n"
+  end
 
 end
 
