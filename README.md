@@ -2,7 +2,7 @@
 
 #### Introduction
 
-Command line app - Asks for a number n and returns a multiplication table with 9 numbers along the columns and rows.
+Command line app - Asks for a number n and returns a multiplication table with the first n prime numbers along the columns and rows.
 
 #### Installation
 
