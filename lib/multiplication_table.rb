@@ -5,12 +5,12 @@ class MultiplicationTable
     columns = rows
 
     print "     "
-    rows.each {|row_num| print " %-3d " % row_num}
+    columns.each {|column_num| print " %-3d " % column_num}
     print "\n\n"
 
-    columns.each do |column_num|
-      print "%-3d| " % column_num
-      rows.each {|row_num| print " %-3d " % (row_num * column_num)}
+    rows.each do |row_num|
+      print "%-3d| " % row_num
+      columns.each {|column_num| print " %-3d " % (column_num * row_num)}
       print "\n\n"
     end
 
